@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Outer glow circle -->
+    <path
+        android:fillColor="#4A90E2"
+        android:pathData="M54,20 C35,20 20,35 20,54 C20,73 35,88 54,88 C73,88 88,73 88,54 C88,35 73,20 54,20 Z"
+        android:fillAlpha="0.3"/>
+    
+    <!-- Main circle -->
+    <path
+        android:fillColor="#4A90E2"
+        android:pathData="M54,28 C39,28 28,39 28,54 C28,69 39,80 54,80 C69,80 80,69 80,54 C80,39 69,28 54,28 Z"/>
+    
+    <!-- Inner white circle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,44 C48,44 44,48 44,54 C44,60 48,64 54,64 C60,64 64,60 64,54 C64,48 60,44 54,44 Z"/>
+    
+    <!-- Microphone symbol -->
+    <path
+        android:fillColor="#4A90E2"
+        android:pathData="M54,48 L54,60 M50,54 L58,54"
+        android:strokeWidth="2"
+        android:strokeColor="#4A90E2"/>
+</vector>

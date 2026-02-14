@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Voice Assistant"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/glowContainer"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+
+        <View
+            android:id="@+id/glowOuter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/glow_circle"
+            android:alpha="0" />
+
+        <View
+            android:id="@+id/glowMiddle"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/glow_circle"
+            android:alpha="0" />
+
+        <ImageView
+            android:id="@+id/assistantIcon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/assistant_icon"
+            android:scaleType="centerInside" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/commandText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/glowContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Say 'Hey Assistant'"
+        android:textSize="18sp"
+        android:textColor="#AAAAAA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Commands:\n• Call/Open/Play/Stop\n• Time/Date/Battery/Weather\n• WiFi/Alarm/Reminder\n• Volume/Brightness/Flashlight\n• Calculate [math]\n• Search [query]\n• Where am I"
+        android:textSize="11sp"
+        android:textColor="#666666"
+        android:gravity="center" />
+
+</RelativeLayout>
